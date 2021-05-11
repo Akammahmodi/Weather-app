@@ -1,0 +1,19 @@
+*   {text-align: center;
+    background-color: #f2e7c3;
+}
+#tempIcon   {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    margin-left: 120px;
+}
+#temperature    {
+    margin-top: 50px;
+}
+#weatherDescription {
+    margin-top: 50px;
+}
+#container  {
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
