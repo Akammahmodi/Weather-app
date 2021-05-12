@@ -14,20 +14,32 @@
     <div id="location">
         <label for="country"></label><input type="text" id="country" placeholder="country" autocomplete="off">
         <label for="city"></label><input type="text" id="city" placeholder="city" autocomplete="off">
-        <input type = "submit" id="check" value="check">
+        <input type="submit" id="check" value="check">
         <background id="getPicture"></background>
         <img src="" alt="" id="image">
 
     </div>
 </div>
-<img src="clouds.svg" alt="" id="tempIcon">
 
+<div id="current">
+    <img src="clouds.svg" alt="" id="tempIcon">
+    <h2 id="weatherCountry">Lier/Belgium</h2>
+    <h2 id="temperature">9 °C</h2>
+    <h2 id="day">wednesday 12/05/2021</h2>
+    <h2 id="weatherDescription">Clouds</h2>
 
-<h2 id="weatherCountry">Lier/Belgium</h2>
-<h2 id="temperature">9 °C</h2>
-<h2 id="weatherDescription">Clouds</h2>
+</div>
+
+<div class="forecast">
+    <h3 id="day2">Thursday 13/05/2021</h3>
+    <h3 id="day3">Friday 14/05/2021</h3>
+    <h3 id="day4">Saturday 15/05/2021</h3>
+    <h3 id="day5">Sunday 16/05/2021</h3>
+    <h3 id="day6">Monday 17/05/2021</h3>
+
+</div>
+
 <script src="script.js"></script>
-
-
+<script src="forecast.js"></script>
 </body>
 </html>
