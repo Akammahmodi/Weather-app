@@ -35,19 +35,19 @@ check.addEventListener("click", () => {
         data.weather.forEach(items => {
             weatherDescription.innerHTML = items.description
             if (items.id < 250) {
-                tempIcon.src = `/images/storm.svg`;
+                tempIcon.src = `storm.svg`;
             } else if (items.id < 350) {
-                tempIcon.src = `/images/drizzle.svg`;
+                tempIcon.src = `drizzle.svg`;
             } else if (items.id < 550) {
-                tempIcon.src = `/images/rain.svg`;
+                tempIcon.src = `rain.svg`;
             } else if (items.id < 650) {
-                tempIcon.src = `/images/snow.svg`;
+                tempIcon.src = `snow.svg`;
             } else if (items.id < 750) {
-                tempIcon.src = `/images/atmosphere.svg`;
+                tempIcon.src = `atmosphere.svg`;
             } else if (items.id === 800) {
-                tempIcon.src = `/images/sun.svg`;
+                tempIcon.src = `sun.svg`;
             } else if (items.id > 800) {
-                tempIcon.src = `/images/clouds.svg`;
+                tempIcon.src = `clouds.svg`;
             }
         })
     })
