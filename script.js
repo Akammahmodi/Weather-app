@@ -12,10 +12,6 @@ const day4 = document.querySelector("#day4");
 const day5 = document.querySelector("#day5");
 const day6 = document.querySelector("#day6");
 
-
-
-
-
 // Here we build the URL so we can get a data from server side.
 check.addEventListener("click", () => {
     let key = 'a03812bcccf9afba7e81f97a9075a749';//Set up the API key
@@ -40,19 +36,19 @@ check.addEventListener("click", () => {
         data.weather.forEach(items => {
             weatherDescription.innerHTML = items.description
             if (items.id < 250) {
-                tempIcon.src = `storm.svg`;
+                tempIcon.src = `/images/storm.svg`;
             } else if (items.id < 350) {
-                tempIcon.src = `drizzle.svg`;
+                tempIcon.src = `/images/drizzle.svg`;
             } else if (items.id < 550) {
-                tempIcon.src = `rain.svg`;
+                tempIcon.src = `/images/rain.svg`;
             } else if (items.id < 650) {
-                tempIcon.src = `snow.svg`;
+                tempIcon.src = `/images/snow.svg`;
             } else if (items.id < 750) {
-                tempIcon.src = `atmosphere.svg`;
+                tempIcon.src = `/images/atmosphere.svg`;
             } else if (items.id === 800) {
-                tempIcon.src = `sun.svg`;
+                tempIcon.src = `/images/sun.svg`;
             } else if (items.id > 800) {
-                tempIcon.src = `clouds.svg`;
+                tempIcon.src = `/images/clouds.svg`;
             }
         })
     })
